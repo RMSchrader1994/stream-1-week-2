@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Math Game</title>
+    <link rel="stylesheet" href="mathgame.css" type="text/css" />
+</head>
+<body>
+    <div class = "buttonContainer">
+    <button class="button" onclick="setAdditionGame();">Addition Game</button>
+    <button class="button" onclick="setSubtractionGame();">Subtraction Game</button>
+    <button class="button" onclick="setMultiplicationGame();">Multiplication Game</button>
+    </div>
+    
+    
+    <p id="score">Score:</p>
+    <p id="question"></p>
+    
+    <form id="myForm" name="answerForm" onsubmit="checkAnswer(); return false" data-gametype="addition" action="#">
+        Enter Answer: <input type="number" name="answer"/>
+        <input type="hidden" name = "rightAnswer">
+        <input type="submit" value="Submit"/>
+    </form>
+    
+    <script src="mathgame.js"></script>
+</body>
+</html>
